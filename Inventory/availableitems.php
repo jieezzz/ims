@@ -11,9 +11,10 @@ require_once 'navbarr.php';
 
 <link rel="stylesheet" href="assets/navstyle.css">
 
-    <title>Document</title>
+    <title>UNDER MAINTENANCE</title>
     <ol class="breadcrumb" style="background-color:#c6d3eb;">
-		  <li class="active">AVAILABLE ITEMS</li>
+    <li><a href="dashboard.php">HOME / </a></li>		
+		  <li class="active">UNDER MAINTENANCE</li>
 		</ol>
 </head>
 <body>

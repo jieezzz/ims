@@ -11,7 +11,10 @@
 <body>
 <nav class="navbar navbar-expand-custom navbar-mainbg">
 <img src="logo.png" alt="" width="70px" height="55px" >
-        <a class="navbar-brand navbar-logo" href="dashboard.php">HOME</a>
+        <a class="navbar-brand navbar-logo" href=""></a>
+        <a class="navbar-brand navbar-logo" href=""></a>
+        <a class="navbar-brand navbar-logo" href=""></a>
+      
         <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars text-white"></i>
         </button>
@@ -20,19 +23,30 @@
             <ul class="navbar-nav ml-auto">
                 <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
                 <li class="nav-item">
+               
                     <a class="nav-link" href="dashboard.php"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="availableitems.php"><i class="far fa-address-book"></i>UNDER MAINTENANCE</a>
+                
+                    <a class="nav-link" href="category.php"><i class="far fa-address-book"></i>CATEGORY</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="itemsinuse.php"><i class="far fa-clone"></i>ITEMS IN USE</a>
+                
+                    <a class="nav-link" href="storage.php"><i class="far fa-clone"></i>STORAGE</a>
                 </li>
                 <li class="nav-item">
+              
                     <a class="nav-link" href="product.php"><i class="far fa-calendar-alt"></i>PRODUCT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="history.php"><i class="far fa-chart-bar"></i>HISTORY</a>
+           
+                    <a class="nav-link" href="itemsinuse.php"><i class="far fa-chart-bar"></i>ITEMS IN USE</a>
+                </li>
+                <li class="nav-item" >
+                
+                    <a class="nav-link" href="availableitems.php"><i class="far fa-address-book"></i>UNDER MAINTENANCE</a>
+                </li>  <li class="nav-item">
+                    <a class="nav-link" href="history.php"><i class="far fa-address-book"></i>HISTORY</a>
                 </li>
                
             </ul>

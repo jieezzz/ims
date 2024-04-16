@@ -8,6 +8,7 @@
 
     <title>Items In Use</title>
     <ol class="breadcrumb" style="background-color:#c6d3eb;">
+    <li><a href="dashboard.php">HOME / </a></li>		
 		  <li class="active">ITEMS IN USE</li>
 		</ol>
 </head>

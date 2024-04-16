@@ -25,13 +25,27 @@ if(isset($_POST['submit'])){
 <body>
 <?php include 'navbarr.php' ?>
 <form method="POST">
-   
-   <label>STORAGE</label>
-   <input type ="text" name="storage_name"/> <br/><br/>
+<ol class="breadcrumb" style="background-color:#c6d3eb;">
+<li><a href="dashboard.php">HOME / </a></li>		
+        <li><a href="storage.php">STORAGE / </a></li>		
+		  <li class="active">ADD STORAGE</li>
+		</ol>
 
-   <button class="btn btn-primary" type="submit"    name= "submit">SUBMIT</button>
-
-    </class>
+  
+   <div class = "container" style="background-color:#8eaee9;">
+      <br>
+          <div class="form group" style="background-color:#c6d3eb;">
+          <br>
+                <label>INPUT STORAGE NAME</label></br>
+                          <input type ="text" name="storage_name"/> <br/><br/>
+      </div>
+       <br>
+       <div class="form">
+              <button class="btn btn-primary" type="submit"  name= "submit">SUBMIT</button>
+</div>
+         <br>
+</div>
+</class>
 </button>
 
 </form>

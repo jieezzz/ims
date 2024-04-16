@@ -26,14 +26,26 @@ if(isset($_POST['submit'])){
 <?php include 'navbarr.php' ?>
 <form method="POST">
 <ol class="breadcrumb" style="background-color:#c6d3eb;">
+       <li><a href="dashboard.php">HOME / </a></li>		
+            <li><a href="category.php">CATEGORY / </a></li>		
 		  <li class="active">ADD CATEGORY</li>
 		</ol>
         <br>
-   <label>CATEGORY NAME</label>
-   <input type ="text" name="category_name"/> <br/><br/>
 
+    <div class = "container" style="background-color:#8eaee9;">
+    <br>
+        <div class="form group" style="background-color:#c6d3eb;">
+        <br>
+          <label>INPUT CATEGORY NAME</label><br>
+          <input type ="text" name="category_name"/> <br/><br/>
+        </div>
+        <div class="form">
+            <br>
    <button class="btn btn-primary" type="submit"    name= "submit">SUBMIT</button>
-
+   <br>
+      </div>
+      <br>
+</div>
     </class>
 </button>
 

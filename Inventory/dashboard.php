@@ -3,6 +3,7 @@
 <?php 
 require_once 'navbarr.php'; 
 ?>
+
 <html lang="en">
 <head>
 
@@ -15,6 +16,7 @@ require_once 'navbarr.php';
     <title>Dashboard</title>
 
     <ol class="breadcrumb" style="background-color:#c6d3eb;">
+    <li><a href="dashboard.php">HOME / </a></li>		
 		  <li class="active">DASHBOARD</li>
 		</ol>
 
@@ -25,7 +27,7 @@ require_once 'navbarr.php';
  <div class ="row">   
   <div class= "col-md-4">
     <div class="card">
-      <div class="card-body" style="background-color:#5161ce;">
+      <div class="card-body" style="background-color:#8eaee9;">
         <h5 class="card-title" style="font-color:white;">CATEGORY</h5>
         <a class='btn btn-primary btn-sm' href='category.php'> View</a>
       </div>
@@ -35,7 +37,7 @@ require_once 'navbarr.php';
 
   <div class= "col-md-4">
     <div class="card">
-      <div class="card-body" style="background-color:#5161ce;">
+      <div class="card-body" style="background-color:#8eaee9;">
         <h5 class="card-title" style="font-color:white;">STORAGE</h5>
         <a class='btn btn-primary btn-sm' href='storage.php'> View</a>
       </div>
@@ -45,7 +47,7 @@ require_once 'navbarr.php';
   <br>
  <div class= "col-md-4">
     <div class="card">
-      <div class="card-body" style="background-color:#5161ce;">
+      <div class="card-body" style="background-color:#8eaee9;">
         <h5 class="card-title" style="font-color:white;">PRODUCT</h5>
         <a class='btn btn-primary btn-sm' href='product.php'> View</a>
       </div>

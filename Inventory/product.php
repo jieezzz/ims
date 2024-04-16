@@ -9,6 +9,7 @@
 <body>
 <?php include 'navbarr.php' ?>
 <ol class="breadcrumb" style="background-color:#c6d3eb;">
+<li><a href="dashboard.php">HOME / </a></li>		
 		  <li class="active">PRODUCT</li>
 		</ol>
 <div class="controler">
