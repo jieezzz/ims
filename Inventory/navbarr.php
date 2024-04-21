@@ -12,8 +12,7 @@
 <nav class="navbar navbar-expand-custom navbar-mainbg">
 <img src="logo.png" alt="" width="70px" height="55px" >
         <a class="navbar-brand navbar-logo" href=""></a>
-        <a class="navbar-brand navbar-logo" href=""></a>
-        <a class="navbar-brand navbar-logo" href=""></a>
+
       
         <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars text-white"></i>
@@ -40,7 +39,7 @@
                 </li>
                 <li class="nav-item">
            
-                    <a class="nav-link" href="itemsinuse.php"><i class="far fa-chart-bar"></i>ITEMS IN USE</a>
+                    <a class="nav-link" href="itemsinuseUpdated.php"><i class="far fa-chart-bar"></i>ITEMS IN USE</a>
                 </li>
                 <li class="nav-item" >
                 

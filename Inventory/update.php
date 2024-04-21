@@ -34,12 +34,26 @@ $product = mysqli_fetch_assoc($query);
     <title>Update Product</title>
 </head>
 <body>
-    <?php include 'navbar.php' ?>
-    <h2>Update Product</h2>
-    <form method="POST">
-        <input type="hidden" name="product_id" value="<?php echo $product['id']; ?>">
+    <?php include 'navbarr.php' ?>
+    <ol class="breadcrumb" style="background-color:#c6d3eb;">
+<li><a href="dashboard.php">HOME / </a></li>	
+<li><a href="product.php">PRODUCT / </a></li>		
+		  <li class="active">UPDATE PRODUCT</li>
+		</ol>
+    
+       <form method="POST">
+<div class = "container" style="background-color:#8eaee9;">
+<br>
+    <div class="form group" style="background-color:#c6d3eb;">
+<br>
+      <div class="col-lg-4">
+        <label>Product ID:</label>
+        <input type="text" name="product_id" value="<?php echo $product['id']; ?>">
+        <br>
+        <br>
         <label>Category:</label>
         <select name="category">
+        <option value="">~~SELECT~~</option>
             <?php
             $categories = mysqli_query($con, "SELECT * FROM category");
             while($c = mysqli_fetch_array($categories)) {
@@ -47,9 +61,12 @@ $product = mysqli_fetch_assoc($query);
             ?>
             <option value="<?php echo $c['category_name'] ?>" <?php echo $selected ?>><?php echo $c['category_name'] ?></option>
             <?php } ?>
-        </select><br><br>
+        </select>
+        <br>
+        <br>
         <label>Storage:</label>
         <select name="storage">
+        <option value="">~~SELECT~~</option>
             <?php
             $storages = mysqli_query($con, "SELECT * FROM storage");
             while($s = mysqli_fetch_array($storages)) {
@@ -57,14 +74,33 @@ $product = mysqli_fetch_assoc($query);
             ?>
             <option value="<?php echo $s['storage_name'] ?>" <?php echo $selected ?>><?php echo $s['storage_name'] ?></option>
             <?php } ?>
-        </select><br><br>
+        </select>
+        <br>
+        <br>
+       </div>
+    </div>
+<br>
+
+<div class="form group" style="background-color:#c6d3eb;">
+<div class="col-lg-4">
+    <br>
         <label>Product Name:</label>
         <input type="text" name="product_name" value="<?php echo $product['product_name']; ?>"><br><br>
         <label>Quantity:</label>
         <input type="text" name="quantity" value="<?php echo $product['quantity']; ?>"><br><br>
         <label>Status:</label>
         <input type="text" name="status" value="<?php echo $product['status']; ?>"><br><br>
-        <button type="submit" name="update">Update Product</button>
+            </div>
+            </div>
+    
+    <br>
+    <button type="submit" name="update">Update Product</button>
+    <br>
+    <br>
+    </div>  
+
     </form>
+
+
 </body>
 </html>

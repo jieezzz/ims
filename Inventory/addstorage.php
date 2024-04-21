@@ -36,8 +36,10 @@ if(isset($_POST['submit'])){
       <br>
           <div class="form group" style="background-color:#c6d3eb;">
           <br>
+          <div class="col-lg-4">
                 <label>INPUT STORAGE NAME</label></br>
                           <input type ="text" name="storage_name"/> <br/><br/>
+</div>
       </div>
        <br>
        <div class="form">

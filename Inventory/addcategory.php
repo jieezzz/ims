@@ -3,13 +3,16 @@ include('dbconnection.php');
 if(isset($_POST['submit'])){
    $category = $_POST['category_name'];
 
-   $sql = "Insert into category (category_name)
+   $query = "Insert into category (category_name)
    Values('$category')";
    $result = mysqli_query($con,$sql);
-   if(mysqli_connect_errno()){
-    echo "Connection Error" . mysqli_connect_error();
+   if($query){
+    echo "<script>alert('done') </script>";
+    } else {
+        echo "<script>alert('error') </script>";
+    }
 }
-}
+
 ?>
 
 
@@ -36,8 +39,10 @@ if(isset($_POST['submit'])){
     <br>
         <div class="form group" style="background-color:#c6d3eb;">
         <br>
+        <div class="col-lg-4">
           <label>INPUT CATEGORY NAME</label><br>
           <input type ="text" name="category_name"/> <br/><br/>
+</div>
         </div>
         <div class="form">
             <br>

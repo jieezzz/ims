@@ -52,7 +52,7 @@ if($connection->connect_error){
      <td>$row[id]</td>
      <td> $row[storage_name]</td>
      <td>
-     <a class='btn btn-danger btn-sm' href= 'deleteproduct.php?id=$row[id]'> DELETE</a>
+     <a class='btn btn-danger btn-sm' href= 'deletestorage.php?id=$row[id]'> DELETE</a>
      </td>
    
      </tr>

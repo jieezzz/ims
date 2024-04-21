@@ -8,11 +8,6 @@ if(isset($_POST['submit'])){
    $status = $_POST['status'];
    $query = mysqli_query($con, "Insert into product (category_id,product_name, storage_id, quantity,status)
    Values ('$category','$product_name', '$storage','$quantity','$status')");
-   if($query){
-    echo "<script>alter('done') </script>";
-    } else {
-        echo "<script>alter('error') </script>";
-    }
 }
 ?>
 
@@ -23,9 +18,13 @@ if(isset($_POST['submit'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Category</title>
+    
 </head>
+<script src="F:\xampp\htdocs\ims\Inventory\assets\validProduct.js"></script>
+
 <body>
 <?php include 'navbarr.php' ?>
+
  <form method="POST">
  <ol class="breadcrumb" style="background-color:#c6d3eb;">
  <li><a href="dashboard.php">HOME / </a></li>		
@@ -39,8 +38,10 @@ if(isset($_POST['submit'])){
 <br>
               <div class="form group" style="background-color:#c6d3eb;">
               <br>
+              <div class="col-lg-4">
               <label>SELECT CATEGORY</label><br>
                       <select name="category">
+                      <option value="">~~SELECT~~</option>
                        <?php
                           include('dbconnection.php');
                       $categories = mysqli_query($con,"Select * from category");
@@ -53,6 +54,7 @@ if(isset($_POST['submit'])){
 
                        <label>SELECT STORAGE</label><br>
                           <select name="storage">
+                          <option value="">~~SELECT~~</option>
                             <?php
                                 include('dbconnection.php');
                              $storages = mysqli_query($con,"Select * from storage");
@@ -62,9 +64,11 @@ if(isset($_POST['submit'])){
                              <?php } ?>
                           </select>
                         <br> </br>
+                            </div>
                </div>
 <br>
                <div class="form group" style="background-color:#c6d3eb;">
+               <div class="col-lg-4">
                       <label>PRODUCT NAME</label><br>
                          <input type ="text" name="product_name"/> <br/><br/>
 
@@ -77,16 +81,17 @@ if(isset($_POST['submit'])){
 
                           <label>STATUS</label><br>
                      <input type ="text" name="status"/> <br/><br/>
+                            </div>
                      </div>
 
 <br>
 
 
-                          <button class="btn btn-primary" type="submit" name= "submit" >SUBMIT</button>
-                          
+                          <button class="btn btn-primary" type="submit" name= "submit">SUBMIT</a></button>
+                       
                           <div>           
 <br>
-
  </form>
+
 </body>
 </html>
